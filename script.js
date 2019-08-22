@@ -57,7 +57,7 @@ class FlyingAnimal2 extends Animal2 {
 }
 
 var mouse = new Animal2('Mouse');
-// var bat = new FlyingAnimal2('Bat', 5)
+var bat = new FlyingAnimal2('Bat', 5);
 
 // A- SEUDO-CLASSIC INHERITANCE & PROTOTYPAL INHERITANCE
 //    1- Create a Vehicle constructor that "subclasses" Object.
