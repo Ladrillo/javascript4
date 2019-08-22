@@ -19,6 +19,16 @@ var sylvania = new Bulb('Sylvania');
 // Animal constructor that takes name (subclassing Object)
 // Create a FlyingAnimal that subclasses Animal
 
+function Animal(name){
+  this.name = name;
+}
+function FlyingAnimal(name){
+  Animal.call(this,name)
+}
+FlyingAnimal.prototype = Object.create(Animal.prototype)
+
+var mouse = new Animal('Mouse')
+var bat = new FlyingAnimal('Bat')
 
 
 // A- SEUDO-CLASSIC INHERITANCE & PROTOTYPAL INHERITANCE
