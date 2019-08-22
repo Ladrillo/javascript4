@@ -3,6 +3,7 @@ var greeting = 'hello from script';
 function Bulb(model) {
   this.model = model;
   this.isOn = false;
+  this.isBroken = false;
 }
 Bulb.prototype.turnOn = function () {
   // side effect
@@ -11,7 +12,8 @@ Bulb.prototype.turnOn = function () {
   return 'turnin on!'
 }
 
-var myBulb = new Bulb('Philips');
+var philips = new Bulb('Philips');
+var sylvania = new Bulb('Sylvania');
 // myBulb gets assigned a __proto__ property holding
 // the methods!! wohooo
 
