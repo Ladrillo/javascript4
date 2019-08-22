@@ -123,7 +123,7 @@ function Foo(data) {
 }
 
 class Foo {
-  constructor() {
+  constructor(data) {
 
   }
 }
