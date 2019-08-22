@@ -34,9 +34,23 @@ FlyingAnimal.prototype.fly = function () {
   return `${this.name} is flying!!`
 }
 
-var mouse = new Animal('Mouse')
-var bat = new FlyingAnimal('Bat', 5)
+// new and improved!!!! SUGAR
+class Animal2 {
+  constructor(name) {
+    this.name = name;
+  }
 
+  greet() {
+    return this.name + '!!!!!'
+  }
+
+  growl() {
+    return 'grrr'
+  }
+}
+
+var mouse = new Animal2('Mouse');
+// var bat = new FlyingAnimal2('Bat', 5)
 
 // A- SEUDO-CLASSIC INHERITANCE & PROTOTYPAL INHERITANCE
 //    1- Create a Vehicle constructor that "subclasses" Object.
