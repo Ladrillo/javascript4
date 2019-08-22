@@ -77,6 +77,9 @@ class Truck extends Vehicle {
   tow() {
     return 'towing'
   }
+  drive() {
+    return 'BROOOOOOOOMO!!!'
+  }
 }
 
 var prius = new Vehicle('prius');
