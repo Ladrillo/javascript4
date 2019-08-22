@@ -60,6 +60,28 @@ class FlyingAnimal2 extends Animal2 {
 var mouse = new Animal2('Mouse');
 var bat = new FlyingAnimal2('Bat', 5);
 
+
+class Vehicle {
+  constructor(name) {
+    this.name = name;
+  }
+  drive() {
+    return 'broooom'
+  }
+}
+
+// if we don't need extra food for the constructor
+// and the truck doens't need any extra properties / fields
+// WE CAN DISPENSE WITH CONSTRUCTOR ALTOGETHER
+class Truck extends Vehicle {
+  tow() {
+    return 'towing'
+  }
+}
+
+var prius = new Vehicle('prius');
+var f150 = new Truck('f150')
+
 // A- SEUDO-CLASSIC INHERITANCE & PROTOTYPAL INHERITANCE
 //    1- Create a Vehicle constructor that "subclasses" Object.
 //    2- Create a Car constructor that "subclasses" Vehicle.
