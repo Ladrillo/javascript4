@@ -74,10 +74,10 @@ class Vehicle {
 // and the truck doens't need any extra properties / fields
 // WE CAN DISPENSE WITH CONSTRUCTOR ALTOGETHER
 class Truck extends Vehicle {
-  // constructor(name) {
-  //   super(name);
-  //   this.cargo = [];
-  // }
+  constructor(name) {
+    super(name);
+    this.cargo = [];
+  }
   tow() {
     return 'towing'
   }
@@ -87,7 +87,9 @@ class Truck extends Vehicle {
 }
 
 class ElectricTruck extends Truck {
-
+  recharge() {
+    return 'recharging'
+  }
 }
 
 var prius = new Vehicle('prius');
