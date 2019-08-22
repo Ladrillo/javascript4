@@ -14,8 +14,12 @@ Bulb.prototype.turnOn = function () {
 
 var philips = new Bulb('Philips');
 var sylvania = new Bulb('Sylvania');
-// myBulb gets assigned a __proto__ property holding
-// the methods!! wohooo
+
+
+// Animal constructor that takes name (subclassing Object)
+// Create a FlyingAnimal that subclasses Animal
+
+
 
 // A- SEUDO-CLASSIC INHERITANCE & PROTOTYPAL INHERITANCE
 //    1- Create a Vehicle constructor that "subclasses" Object.
