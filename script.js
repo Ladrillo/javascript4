@@ -93,8 +93,13 @@ class ElectricTruck extends Truck {
 }
 
 var prius = new Vehicle('prius');
-var f150 = new Truck('f150')
-var teslaTruck = new ElectricTruck('TeslaTruck')
+var f150 = new Truck('f150');
+var teslaTruck = new ElectricTruck('TeslaTruck');
+
+// class Person
+// class Child extends Person
+// class Employee extends Person
+// class NaughtyChild extends Child
 
 // A- SEUDO-CLASSIC INHERITANCE & PROTOTYPAL INHERITANCE
 //    1- Create a Vehicle constructor that "subclasses" Object.
