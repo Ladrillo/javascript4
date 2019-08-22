@@ -96,6 +96,12 @@ var prius = new Vehicle('prius');
 var f150 = new Truck('f150');
 var teslaTruck = new ElectricTruck('TeslaTruck');
 
+var funkyObject = {
+  salute() {
+    return 'hello'
+  }
+}
+
 // class Person
 // class Child extends Person
 // class Employee extends Person
@@ -110,3 +116,27 @@ var teslaTruck = new ElectricTruck('TeslaTruck');
 
 // B- CLASS SYNTACTIC SUGAR
 //    10- Refactor to use the new `class` and `extends` keywords
+
+
+function Foo(data) {
+
+}
+
+class Foo {
+  constructor() {
+
+  }
+}
+
+var myFoo = new Foo({ 
+
+
+  // a million keys
+
+})
+
+class Bar extends Foo {
+  constructor(data) {
+    super(data)
+  }
+}
