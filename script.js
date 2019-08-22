@@ -34,6 +34,7 @@ FlyingAnimal.prototype.fly = function () {
   return `${this.name} is flying!!`
 }
 
+// GENERAL
 // new and improved!!!! SUGAR
 class Animal2 {
   constructor(name) {
