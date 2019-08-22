@@ -74,6 +74,10 @@ class Vehicle {
 // and the truck doens't need any extra properties / fields
 // WE CAN DISPENSE WITH CONSTRUCTOR ALTOGETHER
 class Truck extends Vehicle {
+  constructor(name) {
+    super(name);
+    this.cargo = [];
+  }
   tow() {
     return 'towing'
   }
