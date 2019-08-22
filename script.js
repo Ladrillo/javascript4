@@ -74,10 +74,10 @@ class Vehicle {
 // and the truck doens't need any extra properties / fields
 // WE CAN DISPENSE WITH CONSTRUCTOR ALTOGETHER
 class Truck extends Vehicle {
-  constructor(name) {
-    super(name);
-    this.cargo = [];
-  }
+  // constructor(name) {
+  //   super(name);
+  //   this.cargo = [];
+  // }
   tow() {
     return 'towing'
   }
@@ -86,8 +86,13 @@ class Truck extends Vehicle {
   }
 }
 
+class ElectricTruck extends Truck {
+
+}
+
 var prius = new Vehicle('prius');
 var f150 = new Truck('f150')
+var teslaTruck = new ElectricTruck('TeslaTruck')
 
 // A- SEUDO-CLASSIC INHERITANCE & PROTOTYPAL INHERITANCE
 //    1- Create a Vehicle constructor that "subclasses" Object.
