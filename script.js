@@ -39,13 +39,20 @@ class Animal2 {
   constructor(name) {
     this.name = name;
   }
-
   greet() {
     return this.name + '!!!!!'
   }
-
   growl() {
     return 'grrr'
+  }
+}
+class FlyingAnimal2 extends Animal2 {
+  constructor(name, wingspam) {
+    super(name);
+    this.wingspam = wingspam;
+  }
+  fly() {
+    return `${this.name} is flying!!`;
   }
 }
 
